@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    width: 80vw;
+    background-color: hsl(200, 60%, 99%);
+    justify-content: space-between;
+    border-radius: 12px;
+    margin-top: 7vh;
+}
+nav .logo{
+    width: 9vw;
+    height: 9vh;
+    margin-left: 2%;
+}
+nav .icon-moon img{
+    width: 4vw;
+    height: 4vh;
+}
+nav button{
+    border: none;
+    background-color: hsl(0, 0%, 93%);
+    height: 5vh;
+    width: 5vh;
+    border-radius: 12px;
+    margin-right: 2%;
+}
+
+nav button:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 78%);
+}
+
+.bdy-extensoes{
+    width: 80vw;
+    font-family: 'Noto Sans';
+}
+
+.cabecalho-corpo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

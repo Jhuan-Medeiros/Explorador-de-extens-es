@@ -19,6 +19,9 @@ nav{
     justify-content: space-between;
     border-radius: 12px;
     margin-top: 7vh;
+    margin-bottom: 7vh;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
 }
 nav .logo{
     width: 9vw;
@@ -45,11 +48,25 @@ nav button:hover{
 
 .bdy-extensoes{
     width: 80vw;
-    font-family: 'Noto Sans';
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .cabecalho-corpo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.filtros{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+.filtros button{
+    padding: 3%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: hsl(200, 60%, 99%);
 }

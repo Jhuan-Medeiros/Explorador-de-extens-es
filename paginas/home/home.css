@@ -98,29 +98,20 @@ nav button:hover {
   gap: 10px;
 }
 
-.extensoes-group div {
-  display: flex;
-  background-color: hsl(200, 60%, 99%);
-  border: 1px solid hsl(217, 61%, 90%);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  height: 20vh;
-  border-radius: 12px;
-}
-
-.object img {
+.container img {
   height: 7vh;
 }
 
-.object h3 {
+.container h3 {
   color: hsl(227, 75%, 14%);
 }
 
-.object p {
+.container p {
   font-size: 16px;
   color: hsl(226, 11%, 37%);
 }
 
-.object button {
+.container button {
   display: flex;
   align-items: center;
   padding: 3%;
@@ -130,4 +121,13 @@ nav button:hover {
   border: 1px solid hsl(217, 61%, 90%);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   background-color: hsl(200, 60%, 99%);
+}
+
+.container{
+  display: grid;
+  background-color: hsl(200, 60%, 99%);
+  border: 1px solid hsl(217, 61%, 90%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  height: 20vh;
+  border-radius: 12px;
 }

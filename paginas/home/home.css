@@ -1,85 +1,133 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Noto Sans', sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Noto Sans", sans-serif;
 }
-body{
-    display: flex;
-    min-height: 100vh;
-    min-width: 100vw;
-    background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
-    align-items: center;
-    flex-direction: column;
+body {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  align-items: center;
+  flex-direction: column;
 }
-nav{
-    display: flex;
-    align-items: center;
-    height: 7vh;
-    width: 80vw;
-    background-color: hsl(200, 60%, 99%);
-    justify-content: space-between;
-    border-radius: 12px;
-    margin-top: 7vh;
-    margin-bottom: 7vh;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-
+nav {
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  width: 80vw;
+  background-color: hsl(200, 60%, 99%);
+  justify-content: space-between;
+  border-radius: 12px;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  border: 1px solid hsl(217, 61%, 90%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-nav .logo{
-    width: 9vw;
-    height: 9vh;
-    margin-left: 2%;
+nav .logo {
+  width: 9vw;
+  height: 9vh;
+  margin-left: 2%;
 }
-nav .icon-moon img{
-    width: 4vw;
-    height: 4vh;
+nav .icon-moon img {
+  width: 4vw;
+  height: 4vh;
 }
-nav button{
-    border: none;
-    background-color: hsl(0, 0%, 93%);
-    height: 5vh;
-    width: 5vh;
-    border-radius: 12px;
-    margin-right: 2%;
-}
-
-nav button:hover{
-    cursor: pointer;
-    background-color: hsl(0, 0%, 78%);
+nav button {
+  border: none;
+  background-color: hsl(0, 0%, 93%);
+  height: 5vh;
+  width: 5vh;
+  border-radius: 12px;
+  margin-right: 2%;
 }
 
-.bdy-extensoes{
-    width: 80vw;
+nav button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 78%);
 }
 
-.cabecalho-corpo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.bdy-extensoes {
+  width: 80vw;
 }
 
-.cabecalho-corpo h2{
-    font-size: 30px;
-    color: hsl(227, 75%, 14%);
-    font-weight: 700;
+.cabecalho-corpo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 2vh;
 }
 
-.filtros{
-    display: flex;
-    justify-content: flex-end;
-    width: 20%;
+.cabecalho-corpo h2 {
+  font-size: 30px;
+  color: hsl(227, 75%, 14%);
+  font-weight: 700;
 }
 
-.filtros button{
-    padding: 2%;
-    margin-left: 7px;
-    height: 90%;
-    border-radius: 20px;
-    border: 1px solid hsl(0, 0%, 78%);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    background-color: hsl(200, 60%, 99%);
+.filtros {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
 }
 
-.filtros button:hover{
-    cursor: pointer;
-    background-color: hsl(217, 61%, 90%);
+.filtros button {
+  padding: 3%;
+  margin-left: 7px;
+  border-radius: 20px;
+  border: 1px solid hsl(217, 61%, 90%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: hsl(200, 60%, 99%);
+}
+
+.filtros button:hover {
+  cursor: pointer;
+  background-color: hsl(217, 61%, 90%);
+}
+
+.filtros button:focus {
+  background-color: hsl(3, 71%, 56%);
+  color: hsl(200, 60%, 99%);
+  box-shadow: none;
+  border: 1px solid hsl(3, 71%, 56%);
+}
+
+.extensoes-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.extensoes-group div {
+  display: flex;
+  background-color: hsl(200, 60%, 99%);
+  border: 1px solid hsl(217, 61%, 90%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  height: 20vh;
+  border-radius: 12px;
+}
+
+.object img {
+  height: 7vh;
+}
+
+.object h3 {
+  color: hsl(227, 75%, 14%);
+}
+
+.object p {
+  font-size: 16px;
+  color: hsl(226, 11%, 37%);
+}
+
+.object button {
+  display: flex;
+  align-items: center;
+  padding: 3%;
+  height: 3vh;
+  margin-left: 7px;
+  border-radius: 20px;
+  border: 1px solid hsl(217, 61%, 90%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: hsl(200, 60%, 99%);
 }

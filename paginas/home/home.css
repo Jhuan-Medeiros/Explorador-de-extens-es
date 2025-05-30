@@ -33,6 +33,14 @@ nav .icon-moon img {
   width: 4vw;
   height: 4vh;
 }
+
+.container-botoes{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7%;
+  margin-bottom: 5%;
+}
+
 nav button {
   border: none;
   background-color: hsl(0, 0%, 93%);
@@ -111,23 +119,48 @@ nav button:hover {
   color: hsl(226, 11%, 37%);
 }
 
-.container button {
-  display: flex;
-  align-items: center;
-  padding: 3%;
-  height: 3vh;
-  margin-left: 7px;
-  border-radius: 20px;
-  border: 1px solid hsl(217, 61%, 90%);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  background-color: hsl(200, 60%, 99%);
-}
+
+
 
 .container{
   display: grid;
   background-color: hsl(200, 60%, 99%);
   border: 1px solid hsl(217, 61%, 90%);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  height: 20vh;
+  height: auto;
   border-radius: 12px;
+}
+
+.remover-botao{
+  display: flex;
+  align-items: center;
+  padding: 3%;
+  height: 3vh;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  border: 1px solid hsl(217, 61%, 90%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: hsl(200, 60%, 99%);
+  
+}
+
+.remover-botao:hover{
+  cursor: pointer;
+  background-color: hsl(217, 61%, 90%);
+}
+
+
+.container-cima{
+  display: flex;
+  padding: 2vh;
+}
+
+.container-cima img{
+  padding-right: 2%;
+}
+
+.container-text{
+  display: grid;
+  grid-template-rows: auto;
 }

@@ -12,12 +12,17 @@ body {
   flex-direction: column;
 }
 
+button:focus-visible {
+  outline: 2px solid hsl(3, 77%, 44%);
+  outline-offset: 2px;
+}
+
 body::-webkit-scrollbar {
-  width: 9px;               /* width of the entire scrollbar */
+  width: 9px; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: hsl(226, 11%, 17%);        /* color of the tracking area */
+  background: hsl(226, 11%, 17%); /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
@@ -47,7 +52,7 @@ nav .icon-moon img {
   height: 4vh;
 }
 
-.container-botoes{
+.container-botoes {
   display: flex;
   justify-content: space-between;
   margin-top: 7%;
@@ -114,6 +119,11 @@ nav button:hover {
   border: 1px solid hsl(3, 71%, 56%);
 }
 
+.filtros button:focus-visible{
+  background-color: hsl(200, 60%, 99%);
+  color: black;
+}
+
 .extensoes-group {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -133,10 +143,7 @@ nav button:hover {
   color: hsl(226, 11%, 37%);
 }
 
-
-
-
-.container{
+.container {
   display: grid;
   background-color: hsl(200, 60%, 99%);
   border: 1px solid hsl(217, 61%, 90%);
@@ -145,7 +152,7 @@ nav button:hover {
   border-radius: 12px;
 }
 
-.remover-botao{
+.remover-botao {
   display: flex;
   align-items: center;
   padding: 3%;
@@ -156,28 +163,32 @@ nav button:hover {
   border: 1px solid hsl(217, 61%, 90%);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   background-color: hsl(200, 60%, 99%);
-  
 }
 
-.remover-botao:hover{
+.remover-botao:hover {
   cursor: pointer;
   background-color: hsl(217, 61%, 90%);
 }
 
+.remover-botao:focus-visible{
+  background-color: hsl(217, 61%, 90%)
+}
 
-.container-cima{
+.container-cima {
   display: flex;
   padding: 2vh;
 }
 
-.container-cima img{
+.container-cima img {
   padding-right: 2%;
 }
 
-.container-text{
+.container-text {
   display: grid;
   grid-template-rows: auto;
 }
+
+/* estudar isso aq ↓ */
 
 .switch {
   position: relative;
@@ -203,8 +214,7 @@ nav button:hover {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -215,8 +225,8 @@ nav button:hover {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -225,6 +235,12 @@ input:checked + .slider {
 
 input:focus + .slider {
   box-shadow: 0 0 1px hsl(3, 71%, 56%);
+}
+
+input:focus-visible + .slider{
+  outline: 2px solid hsl(3, 77%, 44%);
+  outline-offset: 2px;
+  transition: 0s;
 }
 
 input:checked + .slider:before {

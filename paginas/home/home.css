@@ -4,6 +4,7 @@
   font-family: "Noto Sans", sans-serif;
   letter-spacing: 0.03em;
   font-weight: 400;
+  box-sizing: border-box;
 }
 body {
   display: flex;
@@ -13,13 +14,13 @@ body {
   align-items: center;
   flex-direction: column;
   animation-name: trocaClaro;
-  animation-duration: 0.19s;
+  animation-duration: 0.2s;
 }
 
 body.tema-escuro {
   background: linear-gradient(180deg, #040918 0%, #091540 100%);
   animation-name: trocaEscuro;
-  animation-duration: 0.19s;
+  animation-duration: 0.2s;
 }
 
 @keyframes trocaEscuro {
@@ -74,12 +75,12 @@ nav {
 
 body.tema-escuro nav {
   background-color: hsl(226, 25%, 17%);
-  border: none;
+  border: 1px solid transparent;
 }
 
 nav .logo {
   width: 4.5vh;
-  height: 5vh;
+  height: 4.5vh;
   margin-left: 2%;
 }
 

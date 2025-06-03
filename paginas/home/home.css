@@ -8,7 +8,7 @@
 }
 body {
   display: flex;
-  min-height: auto;
+  min-height: 100vh;
   min-width: auto;
   background: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
   align-items: center;
@@ -191,18 +191,18 @@ body.tema-escuro .filtros button:hover {
   background-color: hsl(226, 11%, 37%);
 }
 
-.filtros button:focus {
-  background-color: hsl(3, 71%, 56%);
-  color: hsl(200, 60%, 99%);
+.filtros-selecionado {
+  background-color: hsl(3, 71%, 56%) !important;
+  color: hsl(200, 60%, 99%) !important  ;
   box-shadow: none;
-  border: 1px solid hsl(3, 71%, 56%);
+  border: 1px solid hsl(3, 71%, 56%) !important;
 }
 
-body.tema-escuro .filtros button:focus {
-  background-color: hsl(3, 71%, 56%);
-  color: hsl(227, 75%, 14%);
+body.tema-escuro .filtros-selecionado{
+  background-color: hsl(3, 71%, 56%) !important;
+  color: hsl(227, 75%, 14%) !important;
   box-shadow: none;
-  border: 1px solid hsl(3, 71%, 56%);
+  border: 1px solid hsl(3, 71%, 56%) !important;
 }
 
 .filtros button:focus-visible {
